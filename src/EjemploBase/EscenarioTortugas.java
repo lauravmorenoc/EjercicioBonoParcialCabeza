@@ -15,22 +15,15 @@ import java.awt.Color;
  */
 public class EscenarioTortugas extends TurtleFrame{
     Turtle tortuga1 = null;
-    Turtle tortuga2=null;
     
     public EscenarioTortugas() {
       tortuga1 = new Turtle(this);
-      tortuga2=new Turtle(this);
     }
     
     public void iniciar(){
-       tortuga1.setPos(-60, 20);
-       tortuga1.setColor(Color.yellow);
-       PintarRectangulo rect1 = new PintarRectangulo(tortuga1, 20, 20);
-       tortuga1.setPos(-60, 20);
-       
-       
-       rect1.start();
-       
+      
+      Tortuga cabeza=new Tortuga(tortuga1); 
+      cabeza.start();
     }
     
     
